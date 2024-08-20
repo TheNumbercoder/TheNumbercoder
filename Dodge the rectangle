@@ -5,7 +5,7 @@ print("And I am here to train you")
 print("You will need to learn the basics of fire")
 print("To do that you will need to find the water demon and take his soul")
 print("Be careful though, he is very powerful")
-      
+
 import pygame
 import random
 import time
@@ -38,7 +38,7 @@ def draw(player, elapsed_time, stars):
 
   for star in stars:
     pygame.draw.rect(WIN, "white", star)
-  
+
   pygame.display.update()
 
 def main():
@@ -48,7 +48,7 @@ def main():
   clock = pygame.time.Clock()
   start_time = time.time()
   elapsed_time = 0
-  
+
   star_add_increment = 2000
   star_count = 0
 
@@ -67,7 +67,7 @@ while run:
 
     star_add_increment = max(200, star_add_increment - 50)
     star_count = 0
-  
+
   for event in pygame.event.get():
     if event.type == pygame.QUIT:
       run = False
@@ -94,10 +94,10 @@ while run:
     pygame.display.update()
     pygame.time.delay(4000)
     break
-  
+
   draw(player, elapsed_time, stars)
 
 pygame.quit()
 
-if__name__ = "__main__":
-  main()
+if __name__ == "__main__" :
+    main()
